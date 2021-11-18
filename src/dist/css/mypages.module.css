@@ -1,0 +1,259 @@
+.main {
+  width: 85%;
+  background: #f2f3f5;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main_body {
+  width: 96%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.main_body_left {
+  width: 40%;
+  padding: 20px 50px 20px 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #f4f4f4;
+}
+
+.main_body_left_title {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.main_body_left_icon_area {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+}
+
+.main_body_left_icon_area_title {
+  margin: auto 10px;
+}
+
+.main_body_left_icon_area_icon {
+  margin: auto 10% auto auto;
+  background: #f2f3f5;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.main_body_left_icon_area_icon .icon {
+  padding-top: 10px;
+}
+
+.main_body_left_profile_area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.main_body_left_profile_area_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_body_left_profile_area_item_title {
+  width: 25%;
+  margin: auto 0;
+  color: #333333;
+  font-size: 12px;
+}
+
+.main_body_left_profile_area_item_item {
+  width: 70%;
+}
+
+.main_body_right {
+  width: 60%;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_body_right_menber_area {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_body_right_menber_title_area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_body_right_menber_title {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.main_body_right_menber_table_head {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f7f7f7;
+  margin-top: 13px;
+  font-size: 12px;
+  color: #000;
+}
+
+.main_body_right_menber_table_head_name {
+  width: 20%;
+  text-align: left;
+  padding: 10px 0 10px 20px;
+  box-sizing: border-box;
+}
+
+.main_body_right_menber_table_head_director {
+  width: 20%;
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+}
+
+.main_body_right_menber_table_head_id {
+  width: 50%;
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+}
+
+.main_body_right_menber_table_head_btn {
+  width: 10%;
+  text-align: right;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+}
+
+.main_body_right_menber_table_body_area {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.main_body_right_menber_table_body_item {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #000;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.main_body_right_menber_table_body_name {
+  width: 20%;
+  text-align: left;
+  padding: 10px 0 10px 20px;
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+.main_body_right_menber_table_body_director {
+  width: 20%;
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+.main_body_right_menber_table_body_id {
+  width: 47%;
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+.main_body_right_menber_table_body_btn {
+  width: 13%;
+  text-align: right;
+  padding: 10px 20px 10px 10px;
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+.main_body_right_share_area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.main_body_right_share_title_area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_body_right_share_title {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.main_body_right_share_table_head {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f7f7;
+  margin-top: 13px;
+  font-size: 12px;
+  color: #000;
+}
+
+.main_body_right_share_table_head_name {
+  width: 20%;
+  text-align: left;
+  padding: 10px 0 10px 20px;
+  box-sizing: border-box;
+}
+
+.main_body_right_share_table_head_btn {
+  width: 10%;
+  text-align: right;
+  padding: 10px 20px 10px 10px;
+  box-sizing: border-box;
+}
+
+.main_body_right_share_table_body_area {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.main_body_right_share_table_body_item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #000;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.main_body_right_share_table_body_name {
+  width: 20%;
+  text-align: left;
+  padding: 10px 0 10px 20px;
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+.main_body_right_share_table_body_btn {
+  width: 13%;
+  text-align: right;
+  padding: 10px 20px 10px 10px;
+  box-sizing: border-box;
+  margin: auto 0;
+}

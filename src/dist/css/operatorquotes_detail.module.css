@@ -1,0 +1,84 @@
+.main {
+  width: 100%;
+  background: #f7f7f7;
+  padding-top: 50px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_head_title {
+  color: #878b8d;
+  padding: 5px 15px;
+  font-size: 20px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 2px solid #dadbdb;
+  margin: 0;
+  background: #fff;
+}
+
+.main_body {
+  width: 75%;
+  padding: 40px 0 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_body_left {
+  width: 45%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main_body_right {
+  width: 45%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main_remarks_area {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.main_remarks_title {
+  width: 100%;
+  font-size: 16px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.main_remarks_item {
+  width: 100%;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.main_form_area {
+  padding: 10px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.main_form_area_upload_area {
+  padding: 30px 0 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%;
+  border-top: 1px solid #dadbdb;
+}
+
+.main_form_area_upload_btn {
+  width: 20%;
+  margin: 10px;
+}

@@ -1,0 +1,318 @@
+//全体設定
+$main-color: #0052cc;
+$sub-color: #1877b7;
+$denger-color: #d00539;
+$background: #fff;
+$text-color: #333333;
+$text2-color: #575861;
+$text3-color: #7d7d7d;
+$disabled: #c1c1c1;
+$main-menu-border: 1px solid #f4f4f4;
+$border-color: #eaeaea;
+$hover-color: #f2f3f5;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+.main {
+  width: 85%;
+  background: $background;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  &_body {
+    width: 95%;
+    margin: 40px auto 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    &_title {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 24px;
+      color: $text2-color;
+    }
+    &_text {
+      font-size: 16px;
+      color: $text2-color;
+    }
+    .mb_30 {
+      margin-bottom: 30px;
+    }
+    .filter {
+      &_area {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgba(134, 134, 134, 0.35);
+      }
+      &_booking_no {
+        width: 10%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        border-right: 1px solid rgba(134, 134, 134, 0.35);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      &_departure {
+        width: 16%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        border-right: 1px solid rgba(134, 134, 134, 0.35);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      &_arrival {
+        width: 16%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        border-right: 1px solid rgba(134, 134, 134, 0.35);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      &_cargo {
+        width: 16%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        border-right: 1px solid rgba(134, 134, 134, 0.35);
+        box-sizing: border-box;
+      }
+      &_payment_status {
+        width: 11%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        border-right: 1px solid rgba(134, 134, 134, 0.35);
+        box-sizing: border-box;
+      }
+      &_price {
+        width: 12%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        border-right: 1px solid rgba(134, 134, 134, 0.35);
+        box-sizing: border-box;
+      }
+      &_downroad {
+        width: 10%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        border-right: 1px solid rgba(134, 134, 134, 0.35);
+        box-sizing: border-box;
+      }
+      &_other {
+        width: 9%;
+        text-align: left;
+        margin-bottom: 5px;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        color: #000000;
+        font-size: 13px;
+        box-sizing: border-box;
+      }
+      &_icon {
+        right: 0;
+      }
+    }
+    .billing_area {
+      display: flex;
+      flex-direction: column;
+      &_icon {
+        margin-left: 8px;
+        margin-bottom: 2px;
+      }
+      &_item_area {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 8px 0;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        &_booking_no {
+          display: flex;
+          flex-direction: row;
+          width: 10%;
+          padding-left: 10px;
+          margin: auto 0;
+          text-align: left;
+          font-size: 14px;
+          color: #333333;
+          box-sizing: border-box;
+        }
+        &_depature {
+          display: flex;
+          flex-direction: column;
+          width: 16%;
+          padding-left: 10px;
+          margin: auto 0;
+          text-align: left;
+          box-sizing: border-box;
+          &_title {
+            text-align: left;
+            font-weight: bold;
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.78);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          &_text {
+            text-align: left;
+            font-size: 10px;
+            height: 12px;
+            color: $text3-color;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        &_arrival {
+          display: flex;
+          flex-direction: column;
+          width: 16%;
+          padding-left: 10px;
+          margin: auto 0;
+          text-align: left;
+          box-sizing: border-box;
+          &_title {
+            text-align: left;
+            font-weight: bold;
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.78);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          &_text {
+            text-align: left;
+            font-size: 10px;
+            height: 12px;
+            color: $text3-color;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        &_cargo {
+          display: flex;
+          flex-direction: column;
+          width: 16%;
+          padding-left: 10px;
+          margin: auto 0;
+          text-align: left;
+          box-sizing: border-box;
+          font-size: 12px;
+          color: $text2-color;
+        }
+        &_payment_status {
+          display: flex;
+          flex-direction: column;
+          width: 11%;
+          padding-left: 10px;
+          margin: auto 0;
+          text-align: left;
+          box-sizing: border-box;
+          &_title {
+            height: 11px;
+            text-align: left;
+            font-size: 13px;
+            color: $text2-color;
+            margin-bottom: 5px;
+          }
+          &_text {
+            text-align: left;
+            font-size: 11px;
+            color: $text3-color;
+          }
+        }
+        &_price {
+          width: 12%;
+          padding-left: 10px;
+          font-size: 14px;
+          font-weight: bold;
+          margin: auto 0;
+          text-align: left;
+          box-sizing: border-box;
+          color: #323131;
+          .usd {
+            padding-right: 5px;
+            font-size: 14px;
+            font-weight: normal;
+          }
+        }
+        &_downroad {
+          width: 10%;
+          padding-left: 10px;
+          margin: auto 0;
+          text-align: left;
+          box-sizing: border-box;
+        }
+        &_other {
+          display: flex;
+          flex-direction: column;
+          width: 8%;
+          padding-left: 10px;
+          margin: auto;
+          text-align: left;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}

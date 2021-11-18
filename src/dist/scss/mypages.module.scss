@@ -1,0 +1,262 @@
+$main-color: #0052cc;
+$sub-color: #1877b7;
+$sub-color: #fff;
+$denger-color: #d00539;
+$background: #f2f3f5;
+$background-sub: #fff;
+$text-color: #333333;
+$text2-color: #575861;
+$text3-color: #7d7d7d;
+$disabled: #c1c1c1;
+$main-menu-border: 1px solid #f4f4f4;
+$border-color: #eaeaea;
+$hover-color: #f2f3f5;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+$font-sub-title: 18px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+$table-border: solid 1px #383737;
+
+.main {
+  width: 85%;
+  background: $background;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  &_body {
+    width: 96%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: $background-sub;
+    &_left {
+      width: 40%;
+      padding: 20px 50px 20px 25px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #f4f4f4;
+      &_title {
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        padding: 5px 0;
+      }
+      &_icon_area {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+        &_title {
+          margin: auto 10px;
+        }
+        &_icon {
+          margin: auto 10% auto auto;
+          background: $background;
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+          text-align: center;
+          .icon {
+            padding-top: 10px;
+          }
+        }
+      }
+      &_profile_area {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        &_item {
+          display: flex;
+          justify-content: space-between;
+          &_title {
+            width: 25%;
+            margin: auto 0;
+            color: #333333;
+            font-size: 12px;
+          }
+          &_item {
+            width: 70%;
+          }
+        }
+      }
+    }
+    &_right {
+      width: 60%;
+      padding: 20px 25px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      &_menber {
+        &_area {
+          display: flex;
+          flex-direction: column;
+        }
+        &_title_area {
+          display: flex;
+          justify-content: space-between;
+        }
+        &_title {
+          font-size: 18px;
+          color: #000;
+          font-weight: bold;
+          padding: 5px 0;
+        }
+        &_table_head {
+          display: flex;
+          flex-wrap: wrap;
+          background: #f7f7f7;
+          margin-top: 13px;
+          font-size: 12px;
+          color: #000;
+          &_name {
+            width: 20%;
+            text-align: left;
+            padding: 10px 0 10px 20px;
+            box-sizing: border-box;
+          }
+          &_director {
+            width: 20%;
+            text-align: left;
+            padding: 10px 0 10px 10px;
+            box-sizing: border-box;
+          }
+          &_id {
+            width: 50%;
+            text-align: left;
+            padding: 10px 0 10px 10px;
+            box-sizing: border-box;
+          }
+          &_btn {
+            width: 10%;
+            text-align: right;
+            padding: 10px 0 10px 10px;
+            box-sizing: border-box;
+          }
+        }
+        &_table_body {
+          &_area {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            overflow-y: scroll;
+          }
+          &_item {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 12px;
+            color: #000;
+            border-bottom: 1px solid #f4f4f4;
+          }
+          &_name {
+            width: 20%;
+            text-align: left;
+            padding: 10px 0 10px 20px;
+            box-sizing: border-box;
+            margin: auto 0;
+          }
+          &_director {
+            width: 20%;
+            text-align: left;
+            padding: 10px 0 10px 10px;
+            box-sizing: border-box;
+            margin: auto 0;
+          }
+          &_id {
+            width: 47%;
+            text-align: left;
+            padding: 10px 0 10px 10px;
+            box-sizing: border-box;
+            margin: auto 0;
+          }
+          &_btn {
+            width: 13%;
+            text-align: right;
+            padding: 10px 20px 10px 10px;
+            box-sizing: border-box;
+            margin: auto 0;
+          }
+        }
+      }
+      &_share {
+        &_area {
+          display: flex;
+          flex-direction: column;
+          margin-top: 25px;
+        }
+        &_title_area {
+          display: flex;
+          justify-content: space-between;
+        }
+        &_title {
+          font-size: 18px;
+          color: #000;
+          font-weight: bold;
+          padding: 5px 0;
+        }
+        &_table_head {
+          display: flex;
+          justify-content: space-between;
+          background: #f7f7f7;
+          margin-top: 13px;
+          font-size: 12px;
+          color: #000;
+          &_name {
+            width: 20%;
+            text-align: left;
+            padding: 10px 0 10px 20px;
+            box-sizing: border-box;
+          }
+          &_btn {
+            width: 10%;
+            text-align: right;
+            padding: 10px 20px 10px 10px;
+            box-sizing: border-box;
+          }
+        }
+        &_table_body {
+          &_area {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            overflow-y: scroll;
+          }
+          &_item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #000;
+            border-bottom: 1px solid #f4f4f4;
+          }
+          &_name {
+            width: 20%;
+            text-align: left;
+            padding: 10px 0 10px 20px;
+            box-sizing: border-box;
+            margin: auto 0;
+          }
+          &_btn {
+            width: 13%;
+            text-align: right;
+            padding: 10px 20px 10px 10px;
+            box-sizing: border-box;
+            margin: auto 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+.mb_50 {
+  margin-bottom: 45px;
+}
+
+div, hr {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 85%;
+  background: #fff;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.body {
+  width: 95%;
+  margin: 40px auto 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #575861;
+}
+
+.text {
+  font-size: 16px;
+  color: #575861;
+}
+
+.head_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contetn_item {
+  display: flex;
+  align-items: center;
+  padding: 10px 2%;
+}
+
+.contetn_item:hover {
+  background-color: #f8f9fa;
+}
+
+.content_item_detail {
+  width: 30%;
+  max-width: 380px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.content_item_flex {
+  display: flex;
+  align-items: center;
+}
+
+.content_item_prfe {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content_item_transportation {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.content_item_transportation svg {
+  margin-right: 10px;
+}
+
+.content_item_bookingNo {
+  background: rgba(225, 233, 245, 0.24);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.content_item_companyName {
+  background: rgba(225, 233, 245, 0.24);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+.content_item_garments {
+  font-size: 12px;
+}
+
+.content_item_garments svg {
+  margin-right: 10px;
+}
+
+.content_item_stepper {
+  width: 70%;
+  padding-top: 10px;
+}
+
+.stepper_head {
+  display: flex;
+  align-items: center;
+}
+
+.stepper_head .stepper_unit {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.stepper_unit_end .red {
+  background-color: #F86967;
+}
+
+.stepper_unit_end .blue {
+  background-color: #E1E9F5;
+}
+
+.stepper_unit_end .gray {
+  background-color: #575861;
+}
+
+.stepper_head_maru {
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: inherit;
+  width: 10px;
+  height: 10px;
+}
+
+.stepper_head_hr {
+  height: 2px;
+  width: 97%;
+  box-sizing: border-box;
+  border: inherit;
+}
+
+.stepper_foot {
+  display: flex;
+  margin-top: 5px;
+}
+
+.stepper_foot .stepper_unit {
+  width: 25%;
+}
+
+.stepper_text_country {
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.stepper_text_date {
+  color: #575861;
+  font-size: 10px;
+}
+
+.stepper_text_shipName {
+  color: #575861;
+  font-size: 12px;
+}
+
+.stepper_ship {
+  position: relative;
+}
+
+.stepper_ship .stepper_ship_maru {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  z-index: 10;
+}
+
+.stepper_ship .stepper_ship_maru svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.half {
+  display: none;
+}
+
+.half .stepper_head_maru {
+  background-color: #575861;
+}
+
+.half .stepper_head_hr {
+  background: linear-gradient(90deg, #575861 0%, #575861 50%, #E1E9F5 50%, #E1E9F5 100%);
+}
+
+.gray .stepper_head_maru {
+  background-color: #575861;
+}
+
+.gray .stepper_head_hr {
+  background-color: #575861;
+}
+
+.blue .stepper_head_maru {
+  background-color: #E1E9F5;
+}
+
+.blue .stepper_head_hr {
+  background-color: #E1E9F5;
+}
+
+.half_red .stepper_head_maru {
+  background-color: #F86967;
+}
+
+.half_red .stepper_head_hr {
+  background: linear-gradient(90deg, #F86967 0%, #F86967 50%, #E1E9F5 50%, #E1E9F5 100%);
+}
+
+.red .stepper_head_maru {
+  background-color: #F86967;
+}
+
+.red .stepper_head_hr {
+  background-color: #F86967;
+}

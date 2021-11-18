@@ -1,0 +1,120 @@
+div, button {
+  box-sizing: border-box;
+}
+.document {
+  margin-top: 30px
+}
+
+// DocumentTop
+.document_top_upload {
+  margin: 25px auto 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px dashed #7D7D7D;
+  padding: 31px 0;
+  & .text {
+    color: #333333;
+    font-size: 18px;
+  }
+  & .small {
+    color: #7D7D7D;
+    font-size: 10px;
+  }
+  & .medium {
+    color: #7D7D7D;
+    font-size: 12px;
+    margin: 10px 0 5px;
+  }
+  .button {
+    background: #F2F3F5;
+    border: 0.5px solid #F2F3F5;
+    color: #333333;
+    font-size: 14px;
+    padding: 3px 25px;
+    font-weight: 400;
+  }
+}
+
+// DocumentDetail
+.document_detail_headTool {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  & .headTool_icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    & svg {
+      padding-right: 2px
+    }
+  }
+}
+.document_detail_body {
+  margin-top: 20px;
+}
+.body_head_list {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #F4F4F4;
+  padding: 0 55px 10px;
+}
+.body_head_item {
+  line-height: 30px;
+  font-size: 13px;
+  color: #000;
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.body_list {
+  margin-top: 15px;
+}
+.detaile_item {
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  & .data {
+    margin-right: 50px;
+  }
+  & .icon {
+    position: relative;
+    border: solid 1px #F2F3F5;
+    border-radius: 50%;
+    height: 19px;
+    width: 19px;
+    margin-right: 6px;
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  & .flex {
+    display: flex;
+    align-items: center;
+  }
+  & .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 auto;
+    & span {
+      background-color: #333333;
+      border-radius: 50%;
+      width: 3px;
+      height: 3px;
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

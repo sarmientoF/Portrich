@@ -1,0 +1,103 @@
+.main {
+  width: 100%;
+  background: #f7f7f7;
+  padding-top: 50px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_head_title {
+  color: #878b8d;
+  padding: 5px 15px;
+  font-size: 20px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 2px solid #dadbdb;
+  margin: 0;
+  background: #fff;
+}
+
+.main_body {
+  width: 98%;
+  padding: 40px 0 60px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.main_body_title_area {
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 10px auto 30px;
+}
+
+.main_body_title_flex {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 0 auto;
+  background: #ecebeb;
+  border-radius: 5px;
+}
+
+.main_body_title {
+  text-align: left;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.main_body_title_item {
+  text-align: left;
+  padding: 5px;
+}
+
+.main_body_cost_area {
+  width: 98%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.main_body_cost_title {
+  width: 98%;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.main_body_sell_area {
+  width: 98%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.main_body_sell_title {
+  width: 98%;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.main_btn_area {
+  width: 98%;
+  padding: 40px 0 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  background: #fff;
+}
+
+.main_btn_edit {
+  margin-right: 120px;
+}
+
+.main_btn_delete {
+  margin-right: 40px;
+}

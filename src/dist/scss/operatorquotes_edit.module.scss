@@ -1,0 +1,117 @@
+$main-color: #0052cc;
+$sub-color: #fff;
+$header-color: #e3b241;
+$main-title-color: #878b8d;
+$background: #f7f7f7;
+$text-color: #b6b6b6;
+$text-sub-color: rgb(71, 69, 69);
+$denger-color: #e34040;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+
+.main {
+  width: 100%;
+  background: $background;
+  padding-top: 50px;
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  &-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  //メインタイトル
+  &_head_title {
+    color: $main-title-color;
+    padding: $space-s $space-l;
+    font-size: $font-main-title;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: $main-title-borer;
+    margin: 0;
+    background: $sub-color;
+  }
+
+  //メインボディ
+  &_body {
+    width: 98%;
+    padding: 40px 0 60px;
+    margin: 10px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    &_title_area {
+      width: 98%;
+      display: flex;
+      justify-content: s;
+      padding: 5px;
+      margin: 10px auto 30px;
+    }
+    &_title_flex {
+      width: 15%;
+      display: flex;
+      margin-right: 10px;
+      flex-direction: column;
+      padding: 5px;
+      background: #ecebeb;
+      border-radius: 5px;
+    }
+    &_title {
+      text-align: left;
+      padding: 5px;
+      font-size: 16px;
+    }
+    &_title_item {
+      text-align: left;
+      padding: 5px;
+    }
+    &_cost_area {
+      width: 98%;
+      margin: 0 auto;
+      padding: 5px;
+    }
+    &_cost_title {
+      width: 98%;
+      font-size: 16px;
+      padding: 10px;
+    }
+    &_sell_area {
+      width: 98%;
+      margin: 0 auto;
+      padding: 5px;
+    }
+    &_sell_title {
+      width: 98%;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  &_btn_area {
+    width: 98%;
+    padding: 40px 0 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+  }
+  &_btn_edit {
+    margin-right: 120px;
+  }
+  &_btn_delete {
+    margin-right: 40px;
+  }
+}

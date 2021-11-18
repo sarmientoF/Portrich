@@ -1,0 +1,100 @@
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+.progress_title {
+  font-size: 18px;
+  color: #333333;
+}
+
+.progress_detail {
+  width: 100%;
+}
+.progress_detail_circle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #4b4b4b;
+  border-radius: 50%;
+  & svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.progress_detail_place {
+  margin: 0 10px 10px 15px;
+  padding-top: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & svg {
+    cursor: pointer;
+  }
+  & .active {
+    transform: scale(1, -1);
+  }
+}
+.progress_bar_hr {
+  height: 100%;
+  border-left: solid 2px #000;
+  margin-left: 14px;
+}
+.progress_detail_cont {
+  max-height: 0;
+  overflow: hidden;
+}
+.active {
+  & .progress_detail_cont {
+    transition: max-height 0.8s;
+    max-height: 100%;
+  }
+}
+
+// アコーディオン
+.progress_accordion {
+  display: flex;
+  padding-bottom: 30px;
+  width: 100%;
+  &:last-child .progress_bar_hr {
+    display: none;
+  }
+}
+.progress_cont {
+  margin-left: 15px;
+  padding: 15px 25px;
+  border: solid 1px #e2e2e2;
+}
+.progress_cont_flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.departure_cont_data {
+  width: 33.3%;
+  display: block;
+  line-height: 1.5;
+  & .small {
+    font-size: 9px;
+    color: #7d7d7d;
+  }
+  & .text {
+    font-size: 13px;
+    color: #000000;
+  }
+  &:nth-child(4) {
+    margin-top: 5px;
+  }
+}
+.progress_voyage {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  & svg {
+    margin-right: 10px;
+  }
+}

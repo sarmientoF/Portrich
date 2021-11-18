@@ -1,0 +1,196 @@
+$main-color: #0052cc;
+$sub-color: #fff;
+$header-color: #e3b241;
+$main-title-color: #878b8d;
+$background: #f7f7f7;
+$text-color: #b6b6b6;
+$text-sub-color: rgb(71, 69, 69);
+$denger-color: #e34040;
+$table-color: #cccccc;
+$input-color: #7e7878;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+$font-sub-title: 18px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+$table-border: solid 1px #383737;
+
+.main {
+  width: 100%;
+  background: $background;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    &_head {
+      background: $sub-color;
+      width: 100%;
+    }
+    .head_item_area {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+      padding: $space-s;
+    }
+    .head_item {
+      width: 10%;
+    }
+    .no_info {
+      width: 35px;
+      height: 35px;
+      font-size: $font-nomal;
+      text-align: center;
+      line-height: 35px;
+      margin: $space-l auto 0;
+      color: $main-color;
+      border: solid 1px $main-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+      &_trun {
+        width: 35px;
+        height: 35px;
+        font-size: $font-nomal;
+        text-align: center;
+        line-height: 35px;
+        margin: $space-l auto 0;
+        color: $sub-color;
+        border: solid 1px $main-color;
+        background: $main-color;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+    }
+    .no_gray {
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      margin: $space-l auto 0;
+      color: $text-color;
+      border: solid 1px $text-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+    .text_gray {
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      color: $text-sub-color;
+      font-size: 11px;
+    }
+
+    .hr_area {
+      width: 20%;
+      margin-top: 29.5px;
+    }
+    .hr_info {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      counter-reset: $main-color;
+      border: none;
+      background-color: $main-color;
+      border: none;
+      border-radius: 1px;
+      height: 1px;
+    }
+    .hr_gray {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      counter-reset: $text-color;
+      border: none;
+      background-color: $text-color;
+      border: none;
+      border-radius: 1px;
+      height: 1px;
+    }
+  }
+  //ボディアイテムエリア
+  .block {
+    width: 700px;
+    box-sizing: border-box;
+    background: $sub-color;
+    padding: $space-l;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    .check_mark_area {
+      position: relative;
+      height: 70px;
+      left: 305px;
+      top: -40px;
+      font-size: 40px;
+      line-height: 70px;
+      background: $main-color;
+      color: $sub-color;
+      border-radius: 8px;
+      text-align: center;
+      width: 70px;
+    }
+    &_title {
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      margin: 0 auto $space-l;
+      text-align: center;
+    }
+    &_body {
+      width: 70%;
+      margin: $space-l auto 40px;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+      border-radius: 8px;
+      border: 1px solid $main-color;
+    }
+    &_btn {
+      &_area {
+        padding: $space-m $space-s;
+        margin: $space-l auto;
+        width: 70%;
+      }
+      margin: 0 auto;
+      font-size: $font-large;
+      text-align: center;
+      background: $main-color;
+      border-radius: 5px;
+      color: $sub-color;
+      padding: $space-m $space-xl;
+      box-shadow: 0 0 100px #ccc;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  //注意書きエリア
+  .warning {
+    &_title {
+      font-size: 16px;
+    }
+    width: 100%;
+    box-sizing: border-box;
+    padding: $space-m;
+    font-size: 12px;
+    text-align: left;
+    color: #8e89a4;
+  }
+}

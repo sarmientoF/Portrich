@@ -1,0 +1,65 @@
+//全体設定
+$main-color: #0052cc;
+$sub-color: #1877b7;
+$denger-color: #d00539;
+$background: #f2f3f5;
+$background-sub: #fff;
+$text-color: #333333;
+$text2-color: #575861;
+$text3-color: #7d7d7d;
+$main-menu-border: 1px solid #f4f4f4;
+$border-color: #eaeaea;
+$hover-color: #f2f3f5;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+$font-sub-title: 18px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+$table-border: solid 1px #383737;
+
+.main {
+  width: 85%;
+  background: $background;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  &_body {
+    width: 96%;
+    height: 650px;
+    background: $background-sub;
+    margin: 25px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    &_title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      font-size: 24px;
+      color: $text2-color;
+    }
+    &_text {
+      font-size: 16px;
+      color: $text2-color;
+    }
+    .flex_wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .mb_30 {
+      margin-bottom: 30px;
+    }
+  }
+}

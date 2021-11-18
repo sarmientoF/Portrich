@@ -1,0 +1,59 @@
+.quote {
+  margin-top: 22px;
+}
+
+.quote_contnt {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #F4F4F4;
+  padding: 25px 46px 77px 53px;
+}
+
+.quote_contnt_list {
+  width: 40%;
+}
+
+.quote_content_item {
+  line-height: 30px;
+  padding: 5px 0;
+}
+
+.quote_content_item:not(:first-child) {
+  border-top: solid 1px #F2F3F5;
+}
+
+.quote_content_item .item_head {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.quote_content_item .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote_content_item .text {
+  color: #575861;
+  font-size: 14px;
+}
+
+.quote_content_item .data {
+  color: #000;
+  font-size: 14px;
+  text-align: right;
+}
+
+.quote_content_item_tatal .data {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.quote_content_item_tatal .price_ex {
+  color: #333;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: right;
+}

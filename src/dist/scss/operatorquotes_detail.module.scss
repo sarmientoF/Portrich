@@ -1,0 +1,105 @@
+$main-color: #0052cc;
+$sub-color: #fff;
+$header-color: #e3b241;
+$main-title-color: #878b8d;
+$background: #f7f7f7;
+$text-color: #b6b6b6;
+$text-sub-color: rgb(71, 69, 69);
+$denger-color: #e34040;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+
+.main {
+  width: 100%;
+  background: $background;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+
+  &-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  //メインタイトル
+  &_head_title {
+    color: $main-title-color;
+    padding: $space-s $space-l;
+    font-size: $font-main-title;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: $main-title-borer;
+    margin: 0;
+    background: $sub-color;
+  }
+
+  //メインボディ
+  &_body {
+    width: 75%;
+    padding: 40px 0 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &_left {
+      width: 45%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    &_right {
+      width: 45%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+  }
+  &_remarks_area {
+    width: 70%;
+    margin: $space-xl auto;
+    // background: #fff;
+  }
+  &_remarks_title {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+  }
+  &_remarks_item {
+    width: 100%;
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  &_form_area {
+    padding: 10px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    &_upload {
+      &_area {
+        padding: 30px 0 80px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 70%;
+        border-top: $main-menu-border;
+      }
+      &_btn {
+        width: 20%;
+        margin: 10px;
+      }
+    }
+  }
+}

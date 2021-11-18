@@ -1,0 +1,212 @@
+div, button {
+  box-sizing: border-box;
+}
+
+.customsclearancerequest {
+  margin-top: 30px;
+}
+
+.head_prev {
+  color: #575861;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.head_prev svg {
+  margin-right: 10px;
+}
+
+.head_title_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 720px;
+}
+
+.head_title {
+  color: #575861;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.head_edit {
+  color: #0753CC;
+  font-size: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.head_edit svg {
+  margin-right: 10px;
+}
+
+.customsclearancerequest_body {
+  margin-top: 30px;
+}
+
+.body_flex {
+  display: flex;
+}
+
+.body_unit {
+  margin-bottom: 50px;
+}
+
+.body_gray_wrap {
+  background-color: #F8F9FA;
+  padding: 20px 0 27px 25px;
+}
+
+.gray_head_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.gray_head_wrap .arrow {
+  margin: 0 20px;
+}
+
+.gray_import_export {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.gray_tag_wrap {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.gray_tag_wrap div:not(:last-child) {
+  margin-right: 15px;
+}
+
+.gray_tag_wrap .tag_ransportation svg {
+  margin-right: 5px;
+}
+
+.gray_tag_wrap .tag_card {
+  color: #7D7D7D;
+}
+
+.gray_tag_wrap .tag_card svg {
+  margin-right: 5px;
+}
+
+.tag_blue {
+  background: #E7F0FE;
+  border-radius: 11px;
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+.gray_foot_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.foot_unit {
+  margin-right: 40px;
+}
+
+.foot_unit:last-child {
+  margin-right: 0;
+}
+
+.foot_unit .company_name {
+  color: #333;
+  font-size: 20px;
+}
+
+.foot_unit .user_no {
+  background: #E7F0FE;
+  border-radius: 11px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.foot_unit .foot_text {
+  color: #333;
+  font-size: 14px;
+}
+
+.request_details {
+  margin-right: 20%;
+}
+
+.request_details .head, .information .head {
+  color: #7D7D7D;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 7px;
+}
+
+.request_details .text, .information .text {
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.request_details .text svg, .information .text svg {
+  margin-right: 7px;
+}
+
+.drage_head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.drage_head .drage {
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.loading {
+  color: #7D7D7D;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.drage_border_wrap {
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  padding: 26px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drage_unit .text {
+  color: #7D7D7D;
+  font-size: 12px;
+}
+
+.drage_unit .data {
+  color: #333333;
+  font-size: 14px;
+}
+
+.drage_unit .blue {
+  color: #0753CC;
+  font-weight: 700;
+}
+
+.truck_head {
+  color: #7D7D7D;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.truck_text {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.truck_text:last-child {
+  margin-bottom: 0;
+}

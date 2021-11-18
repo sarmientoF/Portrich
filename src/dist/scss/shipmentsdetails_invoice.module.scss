@@ -1,0 +1,77 @@
+.invoice {
+  margin-top: 22px;
+}
+.invoice_head {
+  background-color: #F8F9FA;
+  padding: 15px 0 19px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.invoice_head_unit {
+  margin-right: 40px;
+  & .text {
+    color: #7D7D7D;
+    font-size: 12px;
+  }
+  & .data {
+    color: #000000;
+    font-size: 14px;
+    padding-left: 1px;
+  }
+  .bold {
+    font-weight: 700;
+  }
+}
+
+
+.invoice_contnt {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #F4F4F4;
+  padding: 25px 46px 77px 53px;
+}
+.invoice_contnt_list {
+  width: 40%;
+}
+
+
+.invoice_content_item {
+  line-height: 30px;
+  padding: 5px 0;
+  &:not(:first-child) {
+    border-top: solid 1px #F2F3F5;
+  }
+  & .item_head {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  & .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  & .text {
+    color: #575861;
+    font-size: 14px;
+  }
+  & .data {
+    color: #000;
+    font-size: 14px;
+    text-align: right;
+  }
+}
+.invoice_content_item_tatal {
+  & .data {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  & .price_ex {
+    color: #333;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: right;
+  }
+}

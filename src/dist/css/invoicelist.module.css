@@ -1,0 +1,429 @@
+@charset "UTF-8";
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+.mb_50 {
+  margin-bottom: 45px;
+}
+
+.main {
+  width: 85%;
+  background: #fff;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.body {
+  width: 95%;
+  margin: 40px auto 0;
+  box-sizing: border-box;
+}
+
+.invoiceList_body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.duwnload {
+  border: 0.5px solid #7d7d7d;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 5px 9px;
+  margin-bottom: 22px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #575861;
+}
+
+.text {
+  font-size: 16px;
+  color: #575861;
+}
+
+.head_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_head_list {
+  display: flex;
+  align-items: center;
+  padding: 17px 2%;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.35);
+}
+
+.content_head_item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 16px;
+  margin-right: 2.5%;
+  white-space: nowrap;
+}
+
+.content_head_item:nth-child(3) {
+  margin-right: 1%;
+}
+
+.content_head_item:last-child {
+  margin-right: 0;
+}
+
+.content_head_item svg {
+  margin-left: 20px;
+}
+
+.content_head_item:first-child svg {
+  margin-left: 0;
+}
+
+.content_item {
+  display: flex;
+  align-items: center;
+  padding: 16px 2%;
+}
+
+.content_item:hover {
+  background-color: #f8f9fa;
+}
+
+.content_item_data {
+  margin-right: 2.5%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+}
+
+.content_item_data:last-child {
+  margin: 0;
+  text-align: center;
+}
+
+.content_item_text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content_item_userId .content_item_text {
+  font-weight: normal;
+}
+
+.content_item_from {
+  margin-right: 1%;
+}
+
+.content_item_from .content_item_etd {
+  font-size: 10px;
+  color: #7d7d7d;
+}
+
+.content_item_to .content_item_eta {
+  font-size: 10px;
+  color: #7d7d7d;
+}
+
+.content_item_paymentStatus .content_item_status {
+  padding: 1px 2px;
+  background-color: #f4f4f4;
+  border-radius: 11px;
+  text-align: center;
+  width: 60px;
+}
+
+.content_item_paymentStatus .paid {
+  color: #7d7d7d;
+}
+
+.content_item_paymentStatus .unpaid {
+  color: #333;
+}
+
+.content_item_paymentStatus .expired {
+  color: #f86967;
+  background-color: #fff;
+  border: solid 0.5px #f86967;
+}
+
+.content_item_price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* CSSアニメーションの設定 */
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    /*初期状態では透明に*/
+    transform: translateX(2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideOut {
+  100% {
+    opacity: 1;
+    /*初期状態では透明に*/
+    transform: translateX(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateX(-2%);
+  }
+}
+
+.content_detail {
+  display: flex;
+  animation: SlideIn 2s 1;
+}
+
+.detail_left {
+  width: 23%;
+  border-right: 1px solid #f4f4f4;
+  padding-right: 3%;
+}
+
+.detail_left_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left_arrow_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_arrow_block .arrow {
+  background-color: #f4f4f4;
+  padding: 0 6px;
+}
+
+.left_arrow_block .arrow:first-child {
+  margin-right: 10px;
+}
+
+.left_list {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.left_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  padding: 5px 15px;
+}
+
+.left_item:hover {
+  background-color: #f8f9fa;
+}
+
+.left_item_left .prfe {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.left_item_left .paymentDate {
+  color: #7d7d7d;
+  font-size: 12px;
+}
+
+.left_item_right {
+  text-align: right;
+}
+
+.left_item_right .price {
+  font-size: 14px;
+}
+
+.left_item_right .paymentStatus {
+  color: #7d7d7d;
+  font-size: 12px;
+}
+
+.detail_right {
+  width: 68%;
+  margin: 0 auto;
+}
+
+.detail_right_head {
+  background-color: #f8f9fa;
+  padding: 14px 24px 17px;
+}
+
+.right_head_prfe {
+  font-size: 18px;
+  color: #000;
+}
+
+.right_head_detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.head_detail_unit {
+  margin-right: 60px;
+}
+
+.head_detail_unit .text {
+  color: #7d7d7d;
+  font-size: 12px;
+}
+
+.head_detail_unit .value {
+  font-size: 14px;
+}
+
+.head_detail_unit .bold {
+  font-weight: bold;
+}
+
+.head_detail_button {
+  width: 140px;
+  margin: 0 0 0 auto;
+}
+
+.detail_right_content {
+  display: flex;
+}
+
+.right_content_info {
+  width: 65%;
+  border-right: 1px solid #f4f4f4;
+}
+
+.info_list {
+  width: 80%;
+  margin: auto;
+}
+
+.info_item {
+  border-bottom: 1px solid #f2f3f5;
+  margin-bottom: 5px;
+}
+
+.info_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #575861;
+  line-height: 35px;
+  width: 80%;
+  margin: 0 auto 13px auto;
+}
+
+.info_item_crages {
+  color: #333333;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.info_item_flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.info_item_flex:last-child {
+  margin-bottom: 5px;
+}
+
+.info_item_flex .text {
+  color: #7d7d7d;
+  font-size: 14px;
+}
+
+.info_item_flex .value {
+  color: #333;
+  font-size: 13px;
+}
+
+.info_total {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 7px auto 13px auto;
+  line-height: 30px;
+}
+
+.info_total_text {
+  color: #333333;
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+.value_wrap {
+  text-align: right;
+  margin-top: 13px;
+}
+
+.value_wrap .value {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.145em;
+}
+
+.value_wrap .text {
+  color: #333333;
+  font-size: 11px;
+}
+
+.right_content_download {
+  width: 35%;
+}
+
+.download_title {
+  width: 80%;
+  margin: 10px auto 20px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
+.download_list {
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.download_item {
+  display: flex;
+  align-items: center;
+}
+
+.download_item svg {
+  margin-right: 11px;
+}
+
+.download_item .text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #7d7d7d;
+}
+
+.download_item .blue {
+  color: #0753cc;
+}

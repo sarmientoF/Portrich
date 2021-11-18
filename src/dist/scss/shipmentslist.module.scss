@@ -1,0 +1,246 @@
+//全体設定
+$main-color: #0052cc;
+$sub-color: #1877b7;
+$denger-color: #d00539;
+$background: #fff;
+$text-color: #333333;
+$text2-color: #575861;
+$text3-color: #7d7d7d;
+$disabled: #c1c1c1;
+$main-menu-border: 1px solid #f4f4f4;
+$border-color: #eaeaea;
+$hover-color: #f2f3f5;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+
+.mb_20 {
+  margin-bottom: 20px;
+}
+.mb_30 {
+  margin-bottom: 30px;
+}
+.mb_50 {
+  margin-bottom: 45px;
+}
+
+div,hr {
+  box-sizing: border-box;
+}
+
+
+.main {
+  width: 85%;
+  background: $background;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.body {
+  width: 95%;
+  margin: 40px auto 0;
+  box-sizing: border-box;
+}
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  color: $text2-color;
+}
+.text {
+  font-size: 16px;
+  color: $text2-color;
+}
+.head_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contetn_item {
+  display: flex;
+  align-items:center;
+  padding: 10px 2%;
+  &:hover {
+    background-color: #f8f9fa;
+  }
+}
+.content_item_detail {
+  width: 30%;
+  max-width: 380px;
+  color: #333;
+  padding: 10px 0;
+}
+.content_item_flex {
+  display: flex;
+  align-items: center;
+}
+.content_item_prfe {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.content_item_transportation {
+  font-size: 12px;
+  margin-right: 10px;
+  & svg {
+    margin-right: 10px;
+  }
+}
+.content_item_bookingNo {
+  background: rgba(225, 233, 245, 0.24);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.content_item_companyName {
+  background: rgba(225, 233, 245, 0.24);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+.content_item_garments {
+  font-size: 12px;
+  & svg {
+    margin-right: 10px;
+  }
+}
+
+.content_item_stepper {
+  width: 70%;
+  padding-top: 10px;
+  // display: flex;
+}
+
+
+// ShipmentListStepper
+.stepper_head {
+  display: flex;
+  align-items: center;
+  .stepper_unit {
+    width: 25%;
+    display: flex;
+    align-items: center;
+  }
+}
+.stepper_unit_end {
+  & .red {
+    background-color: #F86967;
+  }
+  & .blue {
+    background-color: #E1E9F5;
+  }
+  & .gray {
+    background-color: #575861;
+  }
+}
+.stepper_head_maru {
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: inherit;
+  width: 10px;
+  height: 10px;
+}
+.stepper_head_hr {
+  height: 2px;
+  width: 97%;
+  box-sizing: border-box;
+  border: inherit;
+}
+
+.stepper_foot {
+  display: flex;
+  margin-top: 5px;
+  & .stepper_unit {
+    width: 25%;
+  }
+}
+
+.stepper_text_country {
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.stepper_text_date {
+  color: #575861;
+  font-size: 10px;
+}
+.stepper_text_shipName {
+  color: #575861;
+  font-size: 12px;
+}
+
+.stepper_ship {
+  position: relative;
+  & .stepper_ship_maru {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 10;
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+// stepperColor
+.half {
+  display: none;
+  & .stepper_head_maru {
+    background-color: #575861;
+  }
+  & .stepper_head_hr {
+    background: linear-gradient(90deg, #575861 0%, #575861 50%, #E1E9F5 50%, #E1E9F5 100%);
+  }
+}
+.gray {
+  & .stepper_head_maru {
+    background-color: #575861;
+  }
+  & .stepper_head_hr {
+    background-color: #575861;
+  }
+
+}
+.blue {
+  & .stepper_head_maru {
+    background-color: #E1E9F5;
+  }
+  & .stepper_head_hr {
+    background-color: #E1E9F5;
+  }
+
+}
+
+.half_red {
+  & .stepper_head_maru {
+    background-color: #F86967;
+  }
+  & .stepper_head_hr {
+    background: linear-gradient(90deg, #F86967 0%, #F86967 50%, #E1E9F5 50%, #E1E9F5 100%);
+  }
+}
+.red {
+  & .stepper_head_maru {
+    background-color: #F86967;
+  }
+  & .stepper_head_hr {
+    background-color: #F86967;
+  }
+}

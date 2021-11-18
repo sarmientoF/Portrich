@@ -1,0 +1,10 @@
+.topic_path {
+  display: flex;
+  align-items: center;
+  color: #575861;
+  font-size: 12px;
+  line-height: 30px;
+  & svg {
+    margin: 0 10px;
+  }
+}

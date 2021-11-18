@@ -1,0 +1,351 @@
+.main {
+  width: 100%;
+  background: #f7f7f7;
+  padding-top: 50px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_head_map {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 350px;
+  background: #fff;
+}
+
+.main_head_menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dadbdb;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_head_menu_radio_area {
+  width: 10%;
+  padding: 10px;
+}
+
+.main_head_menu_radio {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #0052cc;
+}
+
+.main_head_menu_radio div {
+  position: relative;
+  flex: 1;
+  border-right: 1px solid #0052cc;
+}
+
+.main_head_menu_radio div:last-child {
+  border-right: 0;
+}
+
+.main_head_menu_radio input {
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+}
+
+.main_head_menu_radio label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #b6b6b6;
+  width: 100%;
+  font-size: 14px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  border-right: 1px solid #0052cc;
+}
+
+.main_head_menu_radio input:checked + label {
+  background: #0052cc;
+  color: #fff;
+}
+
+.main_head_menu_pulldpwn_area {
+  width: 15%;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.main_head_menu_pulldpwn {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #b6b6b6;
+  background: #fff;
+}
+
+.main_head_menu_pulldpwn select {
+  width: 100%;
+  padding-right: 1em;
+  height: 37px;
+  padding: 5px 38px 5px 8px;
+  color: #0052cc;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  appearance: none;
+}
+
+.main_head_menu_pulldpwn select::-ms-expand {
+  display: none;
+}
+
+.main_head_menu_pulldpwn::before {
+  position: absolute;
+  top: 16px;
+  right: 0.8em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #0052cc;
+  pointer-events: none;
+}
+
+.main_head_menu_search_area {
+  width: 20%;
+  padding: 10px;
+}
+
+.main_head_menu_search {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  height: 39px;
+}
+
+.main_head_menu_search_form {
+  position: relative;
+  width: 100%;
+}
+
+.main_head_menu_search_box {
+  height: 37px;
+  width: 90%;
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #b6b6b6;
+  outline: 0;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.main_head_menu_search_btn {
+  height: 37px;
+  line-height: 37px;
+  position: absolute;
+  left: 84%;
+  top: 0;
+  background: none;
+  color: #b6b6b6;
+  border: none;
+  font-size: 20px;
+}
+
+.main_head_menu_search_btn:hover {
+  color: #dfdfdf;
+}
+
+.main_body {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main_body .shipments_item {
+  height: 80px;
+  padding: 5px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-bottom: 1px solid #dadbdb;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.main_body .shipments_item:hover {
+  background: #efefef;
+  opacity: 0.8;
+  transition: 0.6s;
+}
+
+.main_body .shipments_item_selected {
+  height: 80px;
+  padding: 5px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #e8e8e8;
+  border-bottom: 1px solid #dadbdb;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.main_body .shipments_heading {
+  width: 20%;
+  height: 75px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.main_body .shipments_heading .job_no {
+  font-weight: bold;
+  height: 20px;
+}
+
+.main_body .shipments_heading .weight {
+  height: 20px;
+}
+
+.main_body .shipments_heading .freetime {
+  height: 20px;
+}
+
+.main_body .shipments_going {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 0 5px;
+  padding-left: 30px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.main_body .shipments_bar_erea {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main_body .shipments_img_area {
+  width: 5%;
+}
+
+.main_body .shipments_img {
+  height: 25px;
+  width: 25px;
+}
+
+.main_body .shipments_hr_area {
+  width: 19%;
+}
+
+.main_body .shipments_hr_info {
+  height: 1px;
+  line-height: 40px;
+  margin-top: 14px;
+  background-color: #0052cc;
+  border: none;
+  border-radius: 1px;
+}
+
+.main_body .shipments_hr_gray {
+  height: 1px;
+  line-height: 40px;
+  margin-top: 14px;
+  background-color: #b6b6b6;
+  border: none;
+  border-radius: 1px;
+}
+
+.main_body .shipments_date_erea {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_body .shipments_btn_area {
+  width: 10%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main_body .shipments_btn_area a {
+  position: relative;
+  z-index: 3;
+}
+
+.main_body .shipments_date_item {
+  width: 24%;
+  text-align: left;
+  font-size: 10px;
+}
+
+.main_body .shipments_date_item .place_name {
+  font-weight: bold;
+  height: 14px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main_body .shipments_date_item .place_name .arr_date {
+  height: 14px;
+}
+
+.main_body .shipments_date_item .place_name .dep_date {
+  height: 14px;
+}
+
+.main_body .shipments_date_item_over_a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -999px;
+  z-index: 2;
+}
+
+.main_body .shipments_date_item_over_a:hover {
+  background: #b6b6b6;
+  opacity: 0.1;
+}

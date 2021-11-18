@@ -1,0 +1,402 @@
+.main {
+  width: 85%;
+  background: #f2f3f5;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main_body {
+  width: 96%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.main_body_left_area {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  box-sizing: border-box;
+  border-right: 1px solid #f4f4f4;
+}
+
+.main_body_left_area_search {
+  margin: 25px auto 10px;
+  width: 93%;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  color: #7d7d7d;
+  border-radius: 3px;
+}
+
+.main_body_left_area_support {
+  margin: 10px auto 0;
+  padding-left: 5px;
+  width: 93%;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 5px;
+}
+
+.main_body_left_area_support_title {
+  margin: 5px auto 0;
+  padding-left: 5px;
+  font-size: 11px;
+  width: 93%;
+  color: #333;
+}
+
+.main_body_left_area_support_text {
+  margin: 5px auto 0;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  font-size: 11px;
+  width: 93%;
+  color: #7d7d7d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.main_body_left_area_chat_of_cargo_status {
+  margin: 40px auto 0;
+  padding-left: 5px;
+  width: 93%;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 5px;
+}
+
+.main_body_left_area_not_item {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto 0;
+  padding: 0 15px;
+  width: 85%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.main_body_left_area_not_item_title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #575861;
+}
+
+.main_body_left_area_not_item_text {
+  color: #7d7d7d;
+  margin-bottom: 20px;
+}
+
+.main_body_left_area_chat_area {
+  display: flex;
+  flex-direction: column;
+  margin: 12px auto 0;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 403px;
+  overflow-y: scroll;
+}
+
+.main_body_left_area_chat_item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 5px;
+}
+
+.main_body_left_area_chat_item_left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_body_left_area_chat_item_left_up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_body_left_area_chat_item_left_up_case_no {
+  width: 40%;
+  font-size: 13px;
+  color: #333;
+}
+
+.main_body_left_area_chat_item_left_up_booking_no {
+  width: 40%;
+  font-size: 11px;
+  color: #7d7d7d;
+}
+
+.main_body_left_area_chat_item_left_up_booking_no .booking_no {
+  color: #333;
+  padding-left: 8px;
+}
+
+.main_body_left_area_chat_item_left_down_text {
+  color: #7d7d7d;
+  font-size: 5px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.main_body_left_area_chat_item_right {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_body_left_area_chat_item_right_up {
+  color: #7d7d7d;
+  font-size: 10px;
+  text-align: right;
+}
+
+.main_body_left_area_chat_item_right_down {
+  font-size: 11px;
+  margin: 12px 12px 24px 12px;
+  text-align: center;
+  text-align: right;
+}
+
+.main_body .chatpage_area {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_body .chatpage_area_item {
+  width: 96%;
+  margin: 0 auto;
+  padding: 12px 0 8px;
+  border-top: 1px solid #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_body .chatpage_area_item:first-of-type {
+  border-top: none;
+}
+
+.main_body .chatpage_area_item_icon {
+  margin-right: 35px;
+}
+
+.main_body .chatpage_area_item_text {
+  width: 50%;
+  color: #333;
+  padding: auto 0;
+  padding-top: 3px;
+}
+
+.main_body .chatpage_area_item_time {
+  margin-left: auto;
+  padding-top: 3px;
+  color: #7d7d7d;
+  margin-right: 1%;
+}
+
+.main_body_right_area {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.main_body_right_area_head_area {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_body_right_area_head_area_left {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.main_body_right_area_head_area_left_up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_body_right_area_head_area_left_up_root {
+  width: 10%;
+  font-size: 12px;
+  color: #7d7d7d;
+  padding-right: 3%;
+}
+
+.main_body_right_area_head_area_left_up_depature {
+  font-size: 12px;
+  color: #333;
+  max-width: 40%;
+  padding-right: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.main_body_right_area_head_area_left_up_arrow {
+  padding-right: 2%;
+  font-size: 12px;
+}
+
+.main_body_right_area_head_area_left_up_arrival {
+  font-size: 12px;
+  color: #333;
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.main_body_right_area_head_area_left_down {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.main_body_right_area_head_area_left_down_booking_no {
+  font-size: 12px;
+  color: #7d7d7d;
+  margin-right: 10%;
+}
+
+.main_body_right_area_head_area_left_down_booking_no .booking_no {
+  color: #333;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.main_body_right_area_head_area_left_down_case_no {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+
+.main_body_right_area_head_area_left_down_case_no .case_no {
+  color: #333;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.main_body_right_area_head_area_right {
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #1877b7;
+  box-sizing: border-box;
+}
+
+.main_body_right_area_chat_area {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.main_body_right_area_chat_date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.main_body_right_area_chat_date .chat_title_hr {
+  width: 40%;
+  border: none;
+  background: rgba(191, 191, 191, 0.23);
+  height: 1px;
+  margin: auto;
+}
+
+.main_body_right_area_chat_text_area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto 10px;
+}
+
+.main_body_right_area_chat_text_area_icon {
+  width: 8%;
+  box-sizing: border-box;
+}
+
+.main_body_right_area_chat_text_area_text {
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_body_right_area_chat_text_area_text_title_area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_body_right_area_chat_text_area_text_title_area_title {
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.main_body_right_area_chat_text_area_text_title_area_time {
+  margin-top: 2px;
+  font-size: 9px;
+  color: #7d7d7d;
+}
+
+.main_body_right_area_chat_text_area_text_text {
+  width: 95%;
+  font-size: 12px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.main_body_right_area_input_area {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  height: 110px;
+  margin-bottom: 25px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main_body_right_area_input_area_btn {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 140px;
+  left: 79%;
+  bottom: 42px;
+  color: #7d7d7d;
+}
+
+.main_body_right_area_input_area_btn_icon {
+  padding-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.main_body_right_area_input_area_btn_file {
+  padding-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}

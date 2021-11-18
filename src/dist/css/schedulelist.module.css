@@ -1,0 +1,179 @@
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+.mb_45 {
+  margin-bottom: 45px;
+}
+
+.main {
+  width: 100%;
+  background: #fff;
+  padding-top: 58px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main_head {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 97%;
+  margin-top: 10px;
+  margin-left: 3%;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #575861;
+  font-weight: bold;
+}
+
+.port_area {
+  margin-left: 3%;
+  margin-bottom: 15px;
+  display: flex;
+  color: #575861;
+  font-weight: bold;
+}
+
+.port_name {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.port_arrow {
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.content {
+  width: 94%;
+  margin: 0 3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content_left {
+  width: 70%;
+  margin-right: auto;
+}
+
+.content_head_list {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5% 10px 2%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.35);
+}
+
+.content_head_item {
+  margin-right: 20px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.content_head_item:last-child {
+  margin-right: 0;
+}
+
+.content_item {
+  display: flex;
+  align-items: center;
+  padding: 15px 1.5% 15px 2%;
+  font-size: 14px;
+}
+
+.content_item:hover {
+  background-color: #F8F9FA;
+}
+
+.content_item_data {
+  margin-right: 20px;
+  color: #333333;
+}
+
+.content_item_data:last-child {
+  margin-right: 0;
+}
+
+.content_right {
+  width: 26.5%;
+  margin-bottom: 45px;
+}
+
+.content_detail {
+  background: #f2f3f5;
+  margin-top: -45px;
+  padding: 30px 25px;
+}
+
+.content_detail_info {
+  margin-bottom: 30px;
+}
+
+.detail_heading {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.detail_flex {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.detail_flex svg {
+  margin-right: 8px;
+  color: #575861;
+}
+
+.detail_text {
+  color: #575861;
+}
+
+.detail_deadline {
+  background-color: #E7F0FE;
+  border-radius: 11px;
+  color: #575861;
+  display: inline-block;
+  padding: 4px 9px 4px 16px;
+}
+
+.detail_quotes {
+  margin-top: 15px;
+}
+
+.detail_quotes .detail_flex {
+  justify-content: space-between;
+}
+
+.detail_quotes .detail_flex {
+  margin-bottom: 0;
+}
+
+.detail_quotes_head {
+  font-size: 14px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.detail_quotes_text {
+  color: #7D7D7D;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.detail_quotes_money {
+  color: #000;
+}

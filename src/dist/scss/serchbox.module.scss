@@ -1,0 +1,8 @@
+.head_search_box {
+  position: relative;
+  & svg {
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+}

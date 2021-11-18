@@ -1,0 +1,40 @@
+.main {
+  width: 85%;
+  background: #f2f3f5;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main_body {
+  width: 96%;
+  height: 650px;
+  background: #fff;
+  margin: 25px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.main_body_title {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #575861;
+}
+
+.main_body_text {
+  font-size: 16px;
+  color: #575861;
+}
+
+.main_body .flex_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_body .mb_30 {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,84 @@
+div,ul,li,hr {
+  box-sizing: border-box;
+}
+
+.mb_15 {
+  margin-bottom: 15px;
+}
+.mb_30 {
+  margin-bottom: 30px;
+}
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+
+.main {
+  padding-top: 58px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.body {
+  margin: 20px 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.body_content {
+  width: 60%;
+  margin-right: 3%;
+}
+
+
+// BookingNo
+.booking_wrap {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  & svg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.booking_no2 {
+  display: inline-block;
+}
+.booking_input {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  font-size: 14px;
+}
+
+
+// TagArea
+.tag_area {
+  display: flex;
+  align-items: center;
+}
+.tag_text {
+  font-size: 12px;
+  color: #333;
+  margin-right: 12px;
+  & svg {
+    margin-right: 5px;
+  }
+}
+.tag_circle {
+  font-size: 10px;
+  background: rgba(225, 233, 245, 0.24);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+
+// TabArea
+.tab_area {
+  border-bottom: solid 1px #E0E1E4;
+}
+
+
+// サイトバー部分
+.body_sideContent {
+  width: 35%;
+}
+

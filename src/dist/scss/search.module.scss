@@ -1,0 +1,934 @@
+$main-color: #0052cc;
+$sub-color: #fff;
+$header-color: #e3b241;
+$main-title-color: #878b8d;
+$background: #f7f7f7;
+$text-color: #b6b6b6;
+$text-sub-color: rgb(71, 69, 69);
+$denger-color: #e34040;
+$table-color: #cccccc;
+$input-color: #7e7878;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+$font-sub-title: 18px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+$table-border: solid 1px #383737;
+
+.main {
+  width: 100%;
+  background: $background;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  //ヘッドエリア
+  &_head {
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 0 11%;
+    margin: 0 auto 10px;
+    background: $sub-color;
+    border-bottom: $main-menu-border;
+    display: flex;
+    justify-content: space-between;
+    &_left {
+      line-height: 60px;
+      font-size: $font-main-title;
+      color: $main-title-color;
+    }
+    &_right {
+      height: 60px;
+      line-height: 90px;
+      font-size: $font-small;
+      color: $input-color;
+    }
+  }
+  //タブエリア
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto 40px;
+    padding: $space-m $space-xxl;
+    &:after {
+      content: "";
+      width: 100%;
+      // height: 1px;
+      background: $main-menu-border;
+      display: block;
+      order: -1;
+    }
+  }
+  & .tab-label {
+    font-size: 18px;
+    color: $text-color;
+    background: $background;
+    white-space: nowrap;
+    text-align: center;
+    padding: $space-s $space-l;
+    margin-top: $space-m;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    // border-radius: 5px 5px 0 0;
+    // flex: 1;
+    // &:first-of-type {
+    // margin-left: 40px;
+    // }
+  }
+
+  //ボディアイテムエリア
+  & .tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: $background;
+  }
+  & .tab-switch:checked + .tab-label {
+    // background-color:rgba(217,217,217,0.4);
+    color: $main-color;
+    background: $sub-color;
+  }
+  & .tab-switch:checked + .tab-label + .tab-content {
+    height: auto;
+    // overflow: auto;
+    // padding: 5px;
+    opacity: 1;
+    transition: 0.5s opacity;
+    border-radius: $main-menu-border;
+    // box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  & .tab-switch {
+    display: none;
+  }
+  //lcl上
+  .lcl_head {
+    width: 100%;
+    box-sizing: border-box;
+    background: $sub-color;
+    padding: $space-l;
+    &_title {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin-bottom: 40px;
+    }
+    &_body {
+      // width: 100%;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+    }
+  }
+  //fcl上
+  .fcl_head {
+    width: 100%;
+    box-sizing: border-box;
+    background: $sub-color;
+    padding: $space-l;
+    &_title {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin-bottom: $space-l;
+    }
+    &_body {
+      // width: 100%;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+    }
+  }
+  //air上
+  .air_head {
+    width: 100%;
+    box-sizing: border-box;
+    background: $sub-color;
+    padding: $space-l;
+    &_title {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin-bottom: 40px;
+    }
+    &_body {
+      // width: 100%;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+    }
+  }
+  //lcl+air上
+  .lclair_head {
+    width: 100%;
+    box-sizing: border-box;
+    background: $sub-color;
+    padding: $space-l;
+    &_title {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin-bottom: 40px;
+    }
+    &_body {
+      // width: 100%;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+    }
+  }
+  //truck上
+  .truck_head {
+    width: 100%;
+    box-sizing: border-box;
+    background: $sub-color;
+    padding: $space-l;
+    &_title {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin-bottom: 40px;
+    }
+    &_body {
+      // width: 100%;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+    }
+  }
+  //フォームエリア
+  .form_area {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $space-xl;
+    &_sub_title {
+      width: 100%;
+      padding-left: $space-s;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  //ラジオボタン
+  .radio {
+    &_area {
+      display: flex;
+    }
+    margin: 0.5rem;
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      + .radio_label {
+        &:before {
+          content: "";
+          background: $sub-color;
+          border-radius: 100%;
+          border: 1px solid darken($sub-color, 25%);
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          position: relative;
+          top: -0.2em;
+          margin-right: 1em;
+          margin-top: 3px;
+          vertical-align: top;
+          cursor: pointer;
+          text-align: center;
+          transition: all 250ms ease;
+        }
+      }
+      &:checked {
+        + .radio_label {
+          &:before {
+            background-color: $main-color;
+            box-shadow: inset 0 0 0 4px $sub-color;
+          }
+        }
+      }
+      &:focus {
+        + .radio_label {
+          &:before {
+            outline: none;
+            border-color: $main-color;
+          }
+        }
+      }
+      &:disabled {
+        + .radio_label {
+          &:before {
+            box-shadow: inset 0 0 0 4px $sub-color;
+            border-color: darken($sub-color, 25%);
+            background: darken($sub-color, 25%);
+          }
+        }
+      }
+      + .radio_label {
+        &:empty {
+          &:before {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //ラジオボタンcm m 切替
+  .radio_unit {
+    margin: 0 $space-s;
+    &_area {
+      display: flex;
+    }
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      + .radio_label {
+        &:before {
+          content: "";
+          background: $sub-color;
+          border-radius: 100%;
+          border: 1px solid darken($sub-color, 25%);
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          position: relative;
+          top: -0.2em;
+          margin-right: $space-s;
+          margin-top: 6px;
+          vertical-align: top;
+          cursor: pointer;
+          text-align: center;
+          transition: all 250ms ease;
+        }
+      }
+      &:checked {
+        + .radio_label {
+          &:before {
+            background-color: $main-color;
+            box-shadow: inset 0 0 0 2.5px $sub-color;
+          }
+        }
+      }
+      &:focus {
+        + .radio_label {
+          &:before {
+            outline: none;
+            border-color: $main-color;
+          }
+        }
+      }
+      &:disabled {
+        + .radio_label {
+          &:before {
+            box-shadow: inset 0 0 0 4px $sub-color;
+            border-color: darken($sub-color, 25%);
+            background: darken($sub-color, 25%);
+          }
+        }
+      }
+      + .radio_label {
+        &:empty {
+          &:before {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //数量
+  .quantity {
+    &_area {
+      padding: $space-m $space-m $space-m 0;
+    }
+    width: 100%;
+    height: 39px;
+    box-sizing: border-box;
+    border: $main-menu-border;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+  }
+  //寸法
+  .size {
+    &_area {
+      padding: $space-m;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    width: 100%;
+    height: 39px;
+    border: $main-menu-border;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    &_main {
+      width: 80%;
+    }
+    &_sub {
+      width: 20%;
+      height: 39px;
+      box-sizing: border-box;
+      line-height: 39px;
+      text-align: center;
+      border-radius: 0 5px 5px 0;
+      border-top: $main-menu-border;
+      border-right: $main-menu-border;
+      border-bottom: $main-menu-border;
+      box-sizing: border-box;
+    }
+  }
+  //重量
+  .weight {
+    &_area {
+      padding: $space-m;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    width: 100%;
+    height: 39px;
+    box-sizing: border-box;
+    border: $main-menu-border;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px 0 0 5px;
+    &_main {
+      width: 80%;
+    }
+    &_sub {
+      width: 20%;
+      height: 39px;
+      box-sizing: border-box;
+      line-height: 39px;
+      text-align: center;
+      border-radius: 0 5px 5px 0;
+      border-top: $main-menu-border;
+      border-right: $main-menu-border;
+      border-bottom: $main-menu-border;
+      box-sizing: border-box;
+    }
+  }
+  //プルダウン
+  .pulldown_area {
+    padding: $space-m $space-m $space-m 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  .pulldown {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    border: $main-menu-border;
+    background: $sub-color;
+    & select {
+      width: 100%;
+      padding-right: 1em;
+      height: 37px;
+      padding: 5px 38px 5px 8px;
+      color: $input-color;
+      cursor: pointer;
+      text-indent: 0.01px;
+      text-overflow: ellipsis;
+      border: none;
+      outline: none;
+      background: transparent;
+      background-image: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      appearance: none;
+      &::-ms-expand {
+        display: none;
+      }
+    }
+    &::before {
+      position: absolute;
+      top: 16px;
+      right: 0.8em;
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: "";
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid $input-color;
+      pointer-events: none;
+    }
+  }
+
+  //データリスト
+  .datalist_area {
+    padding: $space-m;
+    overflow: hidden;
+    // text-align: center;
+    &:first-of-type {
+      padding: $space-m $space-m $space-m 0;
+    }
+  }
+  .datalist {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    height: 39px;
+    box-sizing: border-box;
+    border: $main-menu-border;
+    background: $sub-color;
+    & select {
+      width: 100%;
+      padding-right: 1em;
+      height: 39px;
+      box-sizing: border-box;
+      padding: 5px 38px 5px 8px;
+      color: $input-color;
+      cursor: pointer;
+      text-indent: 0.01px;
+      text-overflow: ellipsis;
+      border: none;
+      outline: none;
+      background: transparent;
+      background-image: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      appearance: none;
+      &::-ms-expand {
+        display: none;
+      }
+    }
+    &::before {
+      position: absolute;
+      top: 16px;
+      right: 0.8em;
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: "";
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid $input-color;
+      pointer-events: none;
+    }
+  }
+  //チェックボックス
+  .checkbox_area {
+    padding: $space-m $space-l;
+    margin-top: 27px;
+    input[type="checkbox"] {
+      display: none;
+    }
+    .checkbox {
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px 30px;
+      position: relative;
+      width: auto;
+    }
+    .checkbox::before {
+      background: #fff;
+      border: $main-menu-border;
+      border-radius: 3px;
+      content: "";
+      display: block;
+      height: 16px;
+      left: 5px;
+      margin-top: -9px;
+      position: absolute;
+      top: 50%;
+      width: 16px;
+    }
+    .checkbox::after {
+      border-right: 3px solid $main-color;
+      border-bottom: 3px solid $main-color;
+      content: "";
+      display: block;
+      height: 9px;
+      left: 10px;
+      margin-top: -7px;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      transform: rotate(45deg);
+      width: 5px;
+    }
+    input[type="checkbox"]:checked + .checkbox::after {
+      opacity: 1;
+    }
+  }
+  //パッケージタイプradio
+  .package_radio_area {
+    width: 100%;
+  }
+  .package_radio {
+    display: flex;
+    border-radius: 5px;
+    height: 39px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: $main-menu-border;
+    & div {
+      position: relative;
+      flex: 1;
+      border-right: $main-menu-border;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    & input {
+      width: 100%;
+      height: 30px;
+      opacity: 0;
+    }
+    & label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $input-color;
+      width: 100%;
+      font-size: $font-nomal;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      border-right: $main-menu-border;
+    }
+    & input:checked + label {
+      background: $main-color;
+      opacity: 0.8;
+      color: #fff;
+    }
+  }
+  //LWH
+  .lwh {
+    &_area {
+      padding: $space-m;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &_main {
+      width: 33.3%;
+    }
+    &_l {
+      width: 100%;
+      height: 39px;
+      box-sizing: border-box;
+      border: $main-menu-border;
+      text-align: center;
+      padding: 0;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+    }
+    &_w {
+      width: 100%;
+      height: 39px;
+      box-sizing: border-box;
+      border: $main-menu-border;
+      text-align: center;
+      padding: 0;
+      border-right: none;
+    }
+    &_h {
+      width: 100%;
+      height: 39px;
+      box-sizing: border-box;
+      border: $main-menu-border;
+      text-align: center;
+      padding: 0;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  //コンテナサイズ
+  .container_size {
+    &_area {
+      padding: $space-m;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &_main {
+      width: 33.3%;
+    }
+    width: 100%;
+    height: 39px;
+    box-sizing: border-box;
+    border: $main-menu-border;
+    text-align: center;
+    padding: 0;
+    &_1 {
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+    }
+    &_2 {
+      border-right: none;
+    }
+    &_3 {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  //日付
+  .date_area {
+    padding: $space-m $space-m $space-m 0;
+    overflow: hidden;
+    text-align: center;
+    &:nth-child(3) {
+      padding: $space-m;
+    }
+    input[type="date"] {
+      position: relative;
+      width: 100%;
+      padding: 1px 10px;
+      height: 39px;
+      box-sizing: border-box;
+      border: 0;
+      background: transparent;
+      border-radius: 2px;
+      border: $main-menu-border;
+      font-weight: normal;
+      color: $text-color;
+    }
+  }
+
+  //入力フォーム
+  .form_input {
+    &_area {
+      padding: $space-m;
+      display: flex;
+      flex-wrap: wrap;
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+    width: 100%;
+    height: 39px;
+    box-sizing: border-box;
+    border: $main-menu-border;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    &_main {
+      width: 100%;
+    }
+  }
+
+  //商品価値
+  .product_value {
+    &_area {
+      padding: $space-m;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    width: 100%;
+    height: 39px;
+    box-sizing: border-box;
+    border: $main-menu-border;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    &_main {
+      width: 100%;
+    }
+  }
+
+  //共通部分エリア
+  .block {
+    width: 100%;
+    box-sizing: border-box;
+    background: $sub-color;
+    padding: $space-l;
+    margin-bottom: 40px;
+    &_title {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin: 45px auto;
+      &:first-of-type {
+        margin: 0px auto 45px;
+      }
+    }
+    &_title_small {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin: 25px auto;
+      &:first-of-type {
+        margin: 0px auto 25px;
+      }
+    }
+    &_body {
+      // width: 100%;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+    }
+  }
+
+  //注意書きエリア
+  .warning {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 40px 0;
+    padding: $space-m;
+    font-size: $font-nomal;
+    text-align: center;
+    color: #d13434;
+    // background: #ffeab1;
+  }
+
+  .submit {
+    &_area {
+      padding: $space-m;
+      box-sizing: border-box;
+      width: 50%;
+      text-align: center;
+      margin: 25px auto;
+    }
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    background: $sub-color;
+    border-radius: 5px;
+    font-size: $font-sub-title;
+    border: 1px solid $main-color;
+    text-align: center;
+    color: $main-color;
+    box-shadow: 0 0 20px #dcdcdc;
+    &:hover {
+      background: $main-color;
+      opacity: 0.7;
+      border: $main-menu-border;
+      color: $sub-color;
+      transition: 0.5s;
+    }
+  }
+}
+
+//ツールチップ
+.tooltip1 {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 97%;
+  padding-left: 3%;
+  box-sizing: border-box;
+}
+.tooltip1 p {
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+}
+.description1 {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 1.6em;
+  color: $sub-color;
+  border-radius: 5px;
+  background: #505865;
+  width: 100%;
+}
+.description1:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  border: 5px solid transparent;
+  border-top: 5px solid #505865;
+}
+.tooltip1:hover .description1 {
+  display: inline-block;
+  top: -65px;
+  // left: -30px;
+}
+
+.tooltip2 {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 45%;
+  padding-left: 3%;
+  box-sizing: border-box;
+}
+.tooltip2 p {
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+}
+.description2 {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 1.6em;
+  color: $sub-color;
+  border-radius: 5px;
+  background: #505865;
+  width: 100%;
+}
+.description2:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  border: 5px solid transparent;
+  border-top: 5px solid #505865;
+}
+.tooltip2:hover .description2 {
+  display: inline-block;
+  top: -50px;
+  // left: -30px;
+}
+
+.flex_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex_box_colum {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+.mr_20 {
+  margin-right: 20px;
+}

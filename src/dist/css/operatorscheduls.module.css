@@ -1,0 +1,237 @@
+.main {
+  width: 100%;
+  background: #f7f7f7;
+  padding-top: 50px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_head_title {
+  color: #878b8d;
+  padding: 5px 15px;
+  font-size: 20px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0;
+  background: #fff;
+}
+
+.main_body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.main_body_head {
+  background: #fff;
+  width: 100%;
+}
+
+.main_body .head_item_area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.main_body .head_item {
+  width: 10%;
+}
+
+.main_body .no_info {
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 35px;
+  margin: 15px auto 0;
+  color: #0052cc;
+  border: solid 1px #0052cc;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.main_body .no_info_trun {
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 35px;
+  margin: 15px auto 0;
+  color: #fff;
+  border: solid 1px #0052cc;
+  background: #0052cc;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.main_body .no_gray {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin: 15px auto 0;
+  color: #b6b6b6;
+  border: solid 1px #b6b6b6;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.main_body .text_gray {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #474545;
+  font-size: 11px;
+}
+
+.main_body .hr_area {
+  width: 20%;
+  margin-top: 29.5px;
+}
+
+.main_body .hr_info {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  counter-reset: #0052cc;
+  border: none;
+  background-color: #0052cc;
+  border: none;
+  border-radius: 1px;
+  height: 1px;
+}
+
+.main_body .hr_gray {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  counter-reset: #b6b6b6;
+  border: none;
+  background-color: #b6b6b6;
+  border: none;
+  border-radius: 1px;
+  height: 1px;
+}
+
+.main_body_list {
+  margin: 5px auto 15px;
+  width: 97%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #d4cfcf;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main_body_list:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.main_body_list:first-of-type {
+  margin: 20px auto;
+  padding: 10px 0;
+  background: #ececec;
+  border-radius: 2px;
+  border: 1px solid #dadbdb;
+  font-size: 16px;
+  color: #474545;
+}
+
+.main_body_list:first-of-type:hover {
+  border: none;
+}
+
+.main_body_list_area {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  padding-top: 15px;
+  border-top: 1px solid #dadbdb;
+  margin: 0 auto;
+}
+
+.main_body_list_item {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  border-right: 1px solid #dadbdb;
+  width: 10%;
+  padding: 5px;
+  font-size: 11px;
+  color: #757474;
+  line-height: 1.6;
+  text-size-adjust: 100%;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.main_body_list_item_freetime {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  border-right: 1px solid #dadbdb;
+  width: 4%;
+  padding: 5px;
+  font-size: 11px;
+  color: #757474;
+  line-height: 1.6;
+  text-size-adjust: 100%;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.main_body_list_item_title {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  border-right: 1px solid #dadbdb;
+  width: 10%;
+  padding: 5px;
+}
+
+.main_body_list_item_title_freetime {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  border-right: 1px solid #dadbdb;
+  width: 4%;
+  padding: 5px;
+}
+
+.main_body_list .select_area {
+  text-align: center;
+  margin: 0 auto;
+  width: 6%;
+  box-sizing: border-box;
+}
+
+.main_body_list .select_btn {
+  background: #0052cc;
+  padding: 8px 8px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+}
+
+.main_body_list .select_btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

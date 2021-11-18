@@ -1,0 +1,375 @@
+//全体設定
+$main-color: #0052cc;
+$sub-color: #1877b7;
+$denger-color: #d00539;
+$background: #f2f3f5;
+$background-sub: #fff;
+$text-color: #333333;
+$text2-color: #575861;
+$text3-color: #7d7d7d;
+$disabled: #c1c1c1;
+$main-menu-border: 1px solid #f4f4f4;
+$border-color: #eaeaea;
+$hover-color: #f2f3f5;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+.main {
+  width: 85%;
+  background: $background;
+  padding-top: 58px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  &_body {
+    width: 96%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: $background-sub;
+    &_left_area {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      box-sizing: border-box;
+      border-right: 1px solid #f4f4f4;
+      &_search {
+        margin: 25px auto 10px;
+        width: 93%;
+        box-sizing: border-box;
+        background: #f7f7f7;
+        color: $text3-color;
+        border-radius: 3px;
+      }
+      &_support {
+        margin: 10px auto 0;
+        padding-left: 5px;
+        width: 93%;
+        color: #333;
+        font-weight: bold;
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: 5px;
+        &_title {
+          margin: 5px auto 0;
+          padding-left: 5px;
+          font-size: 11px;
+          width: 93%;
+          color: #333;
+        }
+        &_text {
+          margin: 5px auto 0;
+          padding-left: 5px;
+          padding-bottom: 5px;
+          font-size: 11px;
+          width: 93%;
+          color: $text3-color;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          border-bottom: 1px solid #f4f4f4;
+        }
+      }
+      &_chat_of_cargo_status {
+        margin: 40px auto 0;
+        padding-left: 5px;
+        width: 93%;
+        color: #333;
+        font-weight: bold;
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: 5px;
+      }
+      &_not_item {
+        display: flex;
+        flex-direction: column;
+        margin: 60px auto 0;
+        padding: 0 15px;
+        width: 85%;
+        box-sizing: border-box;
+        text-align: center;
+        &_title {
+          font-size: 24px;
+          margin-bottom: 5px;
+          color: $text2-color;
+        }
+        &_text {
+          color: $text3-color;
+          margin-bottom: 20px;
+        }
+      }
+      &_chat_area {
+        display: flex;
+        flex-direction: column;
+        margin: 12px auto 0;
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 403px;
+        overflow-y: scroll;
+      }
+      &_chat_item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #f4f4f4;
+        margin-bottom: 5px;
+        &_left {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          &_up {
+            display: flex;
+            flex-wrap: wrap;
+            &_case_no {
+              width: 40%;
+              font-size: 13px;
+              color: #333;
+            }
+            &_booking_no {
+              width: 40%;
+              font-size: 11px;
+              color: $text3-color;
+              .booking_no {
+                color: #333;
+                padding-left: 8px;
+              }
+            }
+          }
+          &_down_text {
+            color: $text3-color;
+            font-size: 5px;
+            padding-left: 10px;
+            margin-top: 5px;
+          }
+        }
+        &_right {
+          width: 15%;
+          display: flex;
+          flex-direction: column;
+          &_up {
+            color: $text3-color;
+            font-size: 10px;
+            text-align: right;
+          }
+          &_down {
+            font-size: 11px;
+            margin: 12px 12px 24px 12px;
+            text-align: center;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .chatpage_area {
+      display: flex;
+      flex-direction: column;
+      &_item {
+        width: 96%;
+        margin: 0 auto;
+        padding: 12px 0 8px;
+        border-top: 1px solid #f4f4f4;
+        display: flex;
+        flex-wrap: wrap;
+        &:first-of-type {
+          border-top: none;
+        }
+        &_icon {
+          margin-right: 35px;
+        }
+        &_text {
+          width: 50%;
+          color: #333;
+          padding: auto 0;
+          padding-top: 3px;
+        }
+        &_time {
+          margin-left: auto;
+          padding-top: 3px;
+          color: $text3-color;
+          margin-right: 1%;
+        }
+      }
+    }
+    &_right_area {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      box-sizing: border-box;
+      &_head_area {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        &_left {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          &_up {
+            display: flex;
+            flex-wrap: wrap;
+            &_root {
+              width: 10%;
+              font-size: 12px;
+              color: $text3-color;
+              padding-right: 3%;
+            }
+            &_depature {
+              font-size: 12px;
+              color: #333;
+              max-width: 40%;
+              padding-right: 2%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-weight: bold;
+            }
+            &_arrow {
+              padding-right: 2%;
+              font-size: 12px;
+            }
+            &_arrival {
+              font-size: 12px;
+              color: #333;
+              width: 40%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-weight: bold;
+            }
+          }
+          &_down {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5px;
+            &_booking_no {
+              font-size: 12px;
+              color: $text3-color;
+              margin-right: 10%;
+              .booking_no {
+                color: #333;
+                font-weight: bold;
+                padding-left: 10px;
+              }
+            }
+            &_case_no {
+              font-size: 12px;
+              color: $text3-color;
+              .case_no {
+                color: #333;
+                font-weight: bold;
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+        &_right {
+          margin: auto;
+          text-align: center;
+          font-size: 12px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid $sub-color;
+          box-sizing: border-box;
+        }
+      }
+      &_chat_area {
+        width: 100%;
+        box-sizing: border-box;
+        background: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        overflow-y: scroll;
+      }
+      &_chat_date {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        color: #333;
+        margin: 20px 0;
+        .chat_title_hr {
+          width: 40%;
+          border: none;
+          background: rgba(191, 191, 191, 0.23);
+          height: 1px;
+          margin: auto;
+        }
+      }
+      &_chat_text_area {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto 10px;
+        &_icon {
+          width: 8%;
+          box-sizing: border-box;
+        }
+        &_text {
+          width: 90%;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          &_title_area {
+            display: flex;
+            flex-wrap: wrap;
+            &_title {
+              font-size: 12px;
+              color: #333;
+              font-weight: bold;
+              margin-right: 10px;
+            }
+            &_time {
+              margin-top: 2px;
+              font-size: 9px;
+              color: $text3-color;
+            }
+          }
+          &_text {
+            width: 95%;
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px;
+          }
+        }
+      }
+      &_input_area {
+        width: 100%;
+        box-sizing: border-box;
+        background: #f7f7f7;
+        height: 110px;
+        margin-bottom: 25px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        &_btn {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          width: 140px;
+          left: 79%;
+          bottom: 42px;
+          color: #7d7d7d;
+          &_icon {
+            padding-right: 10px;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+          &_file {
+            padding-right: 10px;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,463 @@
+$main-color: #0052cc;
+$sub-color: #fff;
+$header-color: #e3b241;
+$main-title-color: #878b8d;
+$background: #f7f7f7;
+$text-color: #b6b6b6;
+$text-sub-color: rgb(71, 69, 69);
+$denger-color: #e34040;
+$table-color: #cccccc;
+$input-color: #7e7878;
+
+$font-large: 16px;
+$font-nomal: 14px;
+$font-small: 13px;
+$font-header: 26px;
+$font-main-title: 20px;
+$font-sub-title: 18px;
+
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 15px;
+$space-xl: 20px;
+$space-xxl: 30px;
+
+$main-title-borer: 2px solid #dadbdb;
+$main-menu-border: 1px solid #dadbdb;
+$table-border: solid 1px #383737;
+
+.main {
+  width: 100%;
+  background: $background;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    &_head {
+      background: $sub-color;
+      width: 100%;
+    }
+    .head_item_area {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+      padding: $space-s;
+    }
+    .head_item {
+      width: 10%;
+    }
+    .no_info {
+      width: 35px;
+      height: 35px;
+      font-size: $font-nomal;
+      text-align: center;
+      line-height: 35px;
+      margin: $space-l auto 0;
+      color: $main-color;
+      border: solid 1px $main-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+      &_trun {
+        width: 35px;
+        height: 35px;
+        font-size: $font-nomal;
+        text-align: center;
+        line-height: 35px;
+        margin: $space-l auto 0;
+        color: $sub-color;
+        border: solid 1px $main-color;
+        background: $main-color;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+    }
+    .no_gray {
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      margin: $space-l auto 0;
+      color: $text-color;
+      border: solid 1px $text-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+    .text_gray {
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      color: $text-sub-color;
+      font-size: 11px;
+    }
+
+    .hr_area {
+      width: 20%;
+      margin-top: 29.5px;
+    }
+    .hr_info {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      counter-reset: $main-color;
+      border: none;
+      background-color: $main-color;
+      border: none;
+      border-radius: 1px;
+      height: 1px;
+    }
+    .hr_gray {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      counter-reset: $text-color;
+      border: none;
+      background-color: $text-color;
+      border: none;
+      border-radius: 1px;
+      height: 1px;
+    }
+  }
+
+  //ボディアイテムエリア
+  .block {
+    width: 90%;
+    box-sizing: border-box;
+    margin: $space-l auto;
+    &_title {
+      // width: 100%;
+      padding: $space-s;
+      font-size: $font-large;
+      color: $text-sub-color;
+      border-bottom: $main-menu-border;
+      margin-bottom: $space-l;
+    }
+    &_body {
+      // width: 100%;
+      font-size: $font-small;
+      padding: $space-m $space-s;
+      color: $text-sub-color;
+    }
+  }
+  .quotation {
+    &_area {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      background: $background;
+      &_adjustment {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    //左側
+    &_left_area {
+      margin: $space-m auto;
+      width: 90%;
+      background: $sub-color;
+      border: $main-menu-border;
+      border-radius: 5px;
+    }
+
+    &_left_head {
+      height: 25px;
+      text-align: left;
+      line-height: 25px;
+      font-size: $font-nomal;
+      padding: $space-s;
+      border-bottom: $main-menu-border;
+    }
+    &_left_body {
+      display: flex;
+      flex-wrap: wrap;
+      &_item {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        box-sizing: border-box;
+        padding: $space-s $space-m;
+      }
+    }
+    &_left_display {
+      height: auto;
+      font-size: $font-small;
+      padding-bottom: 2px;
+      &:last-of-type {
+        font-size: $font-nomal;
+        padding: 5px 0;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+    &_left_price {
+      height: auto;
+      font-size: $font-small;
+      padding-bottom: 2px;
+      text-align: right;
+      &:last-of-type {
+        font-size: $font-nomal;
+        padding: 5px 0;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+    &_left_remarkes_body {
+      padding: $space-m;
+      text-align: left;
+      height: auto;
+      width: 100%;
+    }
+    //右側
+    &_right_area {
+      width: 30%;
+      margin: $space-m auto;
+      background: $sub-color;
+      border: $main-menu-border;
+      border-radius: 5px;
+    }
+    &_right_head {
+      height: 25px;
+      text-align: left;
+      line-height: 25px;
+      font-size: $font-nomal;
+      padding: $space-s;
+      border-bottom: $main-menu-border;
+    }
+    &_right_body {
+      display: flex;
+      flex-direction: column;
+      border-bottom: $main-menu-border;
+      padding: $space-s;
+      &_item {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        box-sizing: border-box;
+        &_flex {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    &_right_display {
+      height: auto;
+      margin-left: 2%;
+      line-height: 20px;
+      font-size: 12px;
+      padding: 0 2px 1px;
+      color: $text-color;
+    }
+    &_right_price {
+      height: auto;
+      line-height: 20px;
+      font-size: 12px;
+      padding: 0 2px 1px;
+      color: #757a8b;
+    }
+    &_right_foot {
+      display: flex;
+      flex-wrap: wrap;
+      padding: $space-m $space-s;
+      &_item {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &_head {
+        height: 25px;
+        text-align: left;
+        line-height: 25px;
+        font-size: $font-nomal;
+        padding: $space-s;
+        border-bottom: $main-menu-border;
+      }
+      &_info {
+        width: 90%;
+        margin-left: 3%;
+        font-size: 13px;
+        color: #757a8b;
+        padding-top: 10%;
+      }
+    }
+  }
+  //備考欄エリア
+  .remarke_area {
+    width: 90%;
+    margin: $space-xl auto;
+    background: #fff;
+  }
+  //ボタンエリア
+  .btn_area {
+    width: 90%;
+    padding: $space-s $space-l;
+    margin: $space-xl auto;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .booking_btn {
+    &_area {
+      width: 40%;
+    }
+    width: 100%;
+    // position: absolute;
+    font-size: $font-large;
+    text-align: center;
+    background: $main-color;
+    border-radius: 5px;
+    color: $sub-color;
+    padding: $space-m $space-xl;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .back_btn {
+    &_area {
+      width: 30%;
+      margin-left: 5%;
+      margin-top: 8px;
+    }
+    width: 100%;
+    // position: absolute;
+    font-size: 12px;
+    text-align: center;
+    background: $sub-color;
+    border: $main-menu-border;
+    border-radius: 5px;
+    color: $text-color;
+    padding: $space-s $space-l;
+    cursor: pointer;
+    　 &:hover {
+      opacity: 0.7;
+    }
+  }
+  //注意書き
+  .warning {
+    &_area {
+      width: 100%;
+      margin: $space-xl auto;
+      box-sizing: border-box;
+    }
+    &_title {
+      font-size: $font-nomal;
+    }
+    width: 90%;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    padding: $space-m;
+    font-size: 12px;
+    text-align: left;
+    color: #8e89a4;
+  }
+
+  .submit {
+    &_area {
+      padding: $space-m $space-m $space-m 0;
+      box-sizing: border-box;
+      width: 20%;
+      text-align: left;
+      margin-top: $space-xxl;
+    }
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    box-sizing: border-box;
+    background: $main-color;
+    border-radius: 5px;
+    font-size: $font-large;
+    border: 1px solid $main-color;
+    text-align: center;
+    color: $sub-color;
+    box-shadow: 0 0 20px #dcdcdc;
+    &:hover {
+      opacity: 0.7;
+      border: $main-menu-border;
+      color: $sub-color;
+    }
+  }
+}
+//modal部分
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  &_bg {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+  &_content {
+    background: #fff;
+    border-radius: 10px;
+    left: 50%;
+    padding: $space-xxl;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  &_title {
+    width: 100%;
+    box-sizing: border-box;
+    padding: $space-m;
+    font-size: $font-header;
+    color: $input-color;
+    text-align: center;
+  }
+  &_sub_title {
+    width: 100%;
+    box-sizing: border-box;
+    padding: $space-s;
+    font-size: 12px;
+    color: $input-color;
+    text-align: center;
+  }
+  &_body {
+    width: 80%;
+    margin: $space-l auto;
+    border: 1px dashed $main-color;
+    padding: $space-m;
+    border-radius: 10px;
+  }
+  &_btn {
+    &_area {
+      width: 100%;
+      padding: $space-s;
+      box-sizing: border-box;
+      text-align: center;
+      margin: $space-xl auto;
+    }
+    margin: 0 auto;
+    font-size: $font-large;
+    text-align: center;
+    background: $sub-color;
+    border-radius: 5px;
+    color: $main-color;
+    border: 1px solid $main-color;
+    padding: $space-m $space-xl;
+    box-shadow: 0 0 100px #ccc;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+      background: $main-color;
+      color: $sub-color;
+    }
+  }
+  &_close {
+    color: $text-color;
+    font-size: $font-large;
+  }
+}

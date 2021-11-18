@@ -1,0 +1,51 @@
+.task_area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 30px;
+  background-color: #F8FAFD;
+}
+.task_unit {
+  & .small {
+    font-size: 12px;
+    color: #7D7D7D
+  }
+  & .text{
+    font-size: 14px;
+    color: #333333;
+  }
+}
+.fileUpload {
+  height: 219px;
+  border: 1px dashed #7D7D7D;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fileUpload_inner {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & .text {
+    color: #333333;
+    font-size: 18px;
+  }
+  & .small {
+    color: #7D7D7D;
+    font-size: 10px;
+  }
+  & .medium {
+    color: #7D7D7D;
+    font-size: 12px;
+  }
+  .button {
+    background: #0753CC;
+    border: 0.5px solid #0753CC;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 25px;
+    font-weight: 400;
+  }
+}
